@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Привет</string>
+    <string name="button">Кнопка</string>
+    <string name="bye">Пока</string>
+    <string name="new_text">Новый текст</string>
+    <string name="rundom">Случайность</string>
+    <string name="rundom_button">Случайная кнопка</string>
+    <string name="next_activity">Слуедующая активность</string>
+</resources>

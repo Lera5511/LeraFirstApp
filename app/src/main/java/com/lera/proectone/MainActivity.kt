@@ -1,46 +1,36 @@
 package com.lera.proectone
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.random.Random
 
-const val TAG="MainActivity"
+private const val HELLO_KEY = "hello"
+
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
 
+    lateinit var nextActivityButton: Button
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d(TAG, "Ладушки Ладушки")
 
+        nextActivityButton = findViewById(R.id.next_activity_button)
 
+        nextActivityButton.setOnClickListener {
+            val link = Uri.parse("https://google.com")
+            val openBrowserIntent = Intent(Intent.ACTION_VIEW, link)
+            val chooser = Intent.createChooser(openBrowserIntent, "Browser")
+            startActivity(chooser)
         }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d(TAG, "Где были - у бабушки")
+
     }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, "Что ели - кашку")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "Что пили - бражку")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "Кашка сладенька бражка молоденька")
-    }
-
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "А бабушка добренька.")
-    }
-
 
 
 }

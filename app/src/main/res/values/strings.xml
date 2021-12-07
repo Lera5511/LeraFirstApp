@@ -1,8 +1,18 @@
 <resources>
-    <string name="app_name">Lera Proect One</string>
+    <string name="app_name" translatable="false">Lera Proect One</string>
     <string name="hello">Hello!!!</string>
     <string name="button">BUTTON</string>
-    <string name="hello1">Hello</string>
+    <string name="hello1" translatable="false">Hello</string>
     <string name="bye">Bye</string>
     <string name="new_text">new_text</string>
+    <string name="rundom">rundom</string>
+    <string name="rundom_button">rundombutton</string>
+    <string name="random_button">randombutton</string>
+    <string name="next_activity">next activity</string>
+    <string name="label_1">label1</string>
+    <string name="label_2">label2</string>
+    <string name="label_3">label3</string>
+    <string name="label_4">label4</string>
+    <string name="label_5">label5</string>
+    <string name="back_activity">back_activity</string>
 </resources>
